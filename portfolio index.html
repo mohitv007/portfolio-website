@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MOHIT SAI SURYA VELPURI</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#" onclick="showSection('projects')">Portfolio</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="resume.png" onclick="showSection('Resume')">resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Introducing a Computer Science and Engineering (CSE) student with an unwavering passion for all things tech. Hailing with big ambitions, this student is on a mission to leave their mark on the digital landscape.
+                Their journey into the realm of coding and computing began with a spark of curiosity that has since grown into a blazing flame of enthusiasm. From unraveling the intricacies of algorithms to mastering the art of programming languages, they thrive on the challenges that come with exploring the ever-evolving world of technology.
+                Beyond the confines of the classroom, they are natural problem solvers and collaborative team players. They eagerly dive into hackathons, coding competitions, and open-source projects, relishing the opportunity to apply their skills to real-world problems and collaborate with fellow enthusiasts.
+                With a keen eye for detail and a knack for precision, they approach every project with a blend of creativity and analytical thinking. Whether crafting seamless user interfaces or optimizing code for peak performance, they take pride in delivering solutions that exceed expectations.
+                In their free time, they can be found immersing themselves in the latest tech trends, experimenting with new programming languages, or sharpening their skills on coding platforms. A voracious reader and lifelong learner, they believe in the power of continuous self-improvement and are always eager to expand their horizons.
+                As they continue their journey through the dynamic world of computer science, they remain committed to pushing the boundaries of what's possible and making a meaningful impact through their work. With their boundless passion for innovation and a relentless drive to succeed, they are poised to become trailblazers in the field of technology..</p>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>PROJECTS:<BR>
+                RAILWAY RESERVATION SYSTEM<br>
+                RESTAURANT BILLING SYSTEM<br>
+                STUDENT DATABASE MANAGEMENT.</p>
+                <p>skills:<BR>
+                c<br>
+                c++<br>
+                html<br>
+                MS office</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div id="right">
+            <form>
+                <label style="color: rgb(0, 0, 0);" for="name">Name</label>
+                <input type="text" name="name">
+                <label style="color: rgb(0, 0, 0) ;" for="mail">Mail</label>
+                <input type="email" name="mail">
+                <label style="color: rgb(0, 0, 0);" for="feedback">Feedback</label>
+                <textarea rows="15" cols="50"></textarea>
+                <button style="color: rgb(0, 0, 0);">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Personal Website</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
